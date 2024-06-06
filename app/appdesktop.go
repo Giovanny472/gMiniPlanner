@@ -11,7 +11,7 @@ type application struct {
 
 var apl *application
 
-func NewApp() interfaces.IApp {
+func NewAppDesktop() interfaces.IApp {
 	if apl == nil {
 		apl = &application{}
 	}

@@ -14,9 +14,9 @@ import (
 )
 
 type fynemain struct {
-	menu      *fyne.Container
-	detail    *fyne.Container
-	listPlans *widget.List
+	menu   *fyne.Container
+	detail *fyne.Container
+	//listPlans *widget.List
 
 	win fyne.Window
 }
@@ -33,7 +33,7 @@ func NewFyneMain() interfaces.IUI {
 
 func (f *fynemain) Show() {
 
-	app := app.NewWithID("io.ve.planner")
+	app := app.NewWithID("com.viem.planner")
 	f.win = app.NewWindow("Мини-План")
 	f.win.Resize(fyne.NewSize(ui.Width, ui.Height))
 
